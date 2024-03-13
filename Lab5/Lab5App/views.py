@@ -15,9 +15,6 @@ class Person_Form(forms.Form):
 
 people = []
 
-for i in range(50):
-    people.append(Person("Akhlaq", "LOL"))
-
 def add(request):
     if request.method == "POST":
         form = Person_Form(request.POST)
